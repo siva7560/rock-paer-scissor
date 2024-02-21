@@ -48,6 +48,11 @@ img{
 .result{
     margin-top: 40px;
 }
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 
