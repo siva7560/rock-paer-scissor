@@ -36,53 +36,53 @@ function game(user_move){
    }
     if(user_move === 'rock'){
         if(com_move === 'rock'){
-            result='match tied';
+            result='MATCH TIED';
             
         }
         if(com_move === 'paper'){
-            result='you lose';
+            result='YOU LOSE';
         }
         if(com_move === 'scissor'){
-            result='you won';
+            result='YOU WON';
         }
         image=rock_image;
     }
     else if(user_move === 'paper'){
         if(com_move === 'rock'){
-            result='you won';
+            result='YOU WON';
         }
         if(com_move === 'paper'){
-            result='match tied';
+            result='MATCH TIED';
         }
         if(com_move === 'scissor'){
-            result='you lose';
+            result='YOU LOSE';
         }
         image=paper_image;
     }
     else if(user_move === 'scissor'){
         if(com_move === 'rock'){
-            result='you lose';
+            result='YOU LOSE';
         }
         if(com_move === 'paper'){
-            result='you won';
+            result='YOU WON';
         }
         if(com_move === 'scissor'){
-            result='match tied';
+            result='MATCH TIED';
         }
         image=scissor_image;
     }
-    if(result==='you won'){
+    if(result==='YOU WON'){
         score.win++;
     }
-   else  if(result==='you lose'){
+   else  if(result==='YOU LOSE'){
         score.lose++;
     }
-     else if(result==='match tied'){
+     else if(result==='MATCH TIED'){
         score.tie++;
     }
     localStorage.setItem('score',JSON.stringify(score));
     document.querySelector('.result').innerHTML= result;
-    document.querySelector('.moves').innerHTML=`your move : ${image} . computer move : ${im}`;
+    document.querySelector('.moves').innerHTML=`YOUR MOVE : ${image} . COMPUTER MOVE : ${im}`;
    show();
    
 }
