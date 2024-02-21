@@ -82,7 +82,7 @@ function game(user_move){
     }
     localStorage.setItem('score',JSON.stringify(score));
     document.querySelector('.result').innerHTML= result;
-    document.querySelector('.moves').innerHTML=`your move : "${image}" . computer move : ${im}`;
+    document.querySelector('.moves').innerHTML=`your move : ${image} . computer move : ${im}`;
    show();
    
 }
